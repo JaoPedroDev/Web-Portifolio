@@ -1,0 +1,81 @@
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: rgb(34, 34, 34);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  font-size: 6vmin;
+  padding: 2vw;
+  padding-bottom: 0;
+}
+
+h3 {
+  font-size: 4.5vmin;
+  padding: 2vw;
+  overflow: auto;
+}
+
+p {
+  font-size: 4vmin;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+  text-align: justify;
+}
+
+main {
+  max-width: 1000px;
+  min-width: 300px;
+  margin: auto;
+  background-color: white;
+}
+
+#nav_button {
+  position: fixed;
+  right: 5vw;
+  top: 5vh;
+  cursor: pointer;
+}
+
+.nav_button_bars {
+  width: 35px;
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.75);
+  margin: 5px 0;
+}
+
+#intro_h1 {
+  padding-top: 10vh;
+  padding-left: 5vw;
+  font-size: 7vmin;
+}
+
+#intro_div {
+  background-color: black;
+  color: white;
+  padding-bottom: 10vh;
+}
+
+.project_paragraph {
+  margin-left: 0px;
+  overflow: auto;
+  display: block;
+}
+
+.project_image {
+  /*
+  float: left;
+  clear: both;
+  */
+  width: 40vmin;
+  padding-left: 2vw;
+  padding-bottom: 2vh;
+}

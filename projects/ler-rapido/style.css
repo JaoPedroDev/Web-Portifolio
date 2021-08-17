@@ -1,0 +1,31 @@
+#texto{
+    height: auto;
+    min-height: 150px;
+    width: auto;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+#vel{
+    height: 25px;
+}
+
+@media screen and (min-width: 681px){
+    #visor{
+        font-size: 100px;
+    }
+}
+@media screen and (max-width: 680px){
+    #visor{
+        font-size: 80px;
+    }
+    .buttons{
+        width: 60px;
+    }
+    #vel{
+        width: 100px;
+    }
+}

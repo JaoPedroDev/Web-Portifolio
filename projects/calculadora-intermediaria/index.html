@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Intermediária</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../../index.html" id="arrow">&#8592</a>
+    <main>
+        <h1 id="t">Calculadora</h1>
+        <div id="inp">
+            <input type="text" name="visor" id="visor" value=""></br>
+            <input type="button" value="7" id="i7" class="botoes" onclick="botao(7)">
+            <input type="button" value="8" id="i8" class="botoes" onclick="botao(8)">
+            <input type="button" value="9" id="i9" class="botoes" onclick="botao(9)">
+            <input type="button" value="/" id="idivi" class="botoes"  onclick="botao(`/`)"></br>
+            <input type="button" value="4" id="i4" class="botoes" onclick="botao(4)">
+            <input type="button" value="5" id="i5" class="botoes" onclick="botao(5)">
+            <input type="button" value="6" id="i6" class="botoes" onclick="botao(6)">
+            <input type="button" value="*"  id="imult" class="botoes" onclick="botao(`*`)"></br>
+            <input type="button" value="1" id="i1" class="botoes" onclick="botao(1)">
+            <input type="button" value="2" id="i2" class="botoes" onclick="botao(2)">
+            <input type="button" value="3" id="i3" class="botoes" onclick="botao(3)">
+            <input type="button" value="-" id="isubt" class="botoes" onclick="botao(`-`)"></br>
+            <input type="button" value="0" id="i0" class="botoes" onclick="botao(0)">
+            <input type="button" value="C" id="ireset" class="botoes" onclick="reset()" >
+            <input type="button" value="="  id="iresu" class="botoes" onclick="calcular()">
+            <input type="button" value="+"  id="imais" class="botoes" onclick="botao(`+`)"></br>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

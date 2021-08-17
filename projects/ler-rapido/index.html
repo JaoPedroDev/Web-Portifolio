@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../media/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../mainStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Leitura rápida</title>
+</head>
+<body>
+    <a id="back" href="../index.html"><img src="../media/arrow-right.png" alt=""></a>
+    <div id="main">
+        <div id="visor">Palavra</div>
+        <div id="texto" contenteditable="true">Digite o texto que quiser aqui!</div>
+        <div id="buttons">
+            <input type="button" value="Iniciar" id="ini" class="buttons">
+            <input type="button" value="Pausar" id="pau" class="buttons">
+            <input type="button" value="Resetar" id="res" class="buttons">
+            <input type="number" name="velocidade" id="vel" placeholder="200ms">
+            <input type="button" value="Mudar" id="mud" class="buttons">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

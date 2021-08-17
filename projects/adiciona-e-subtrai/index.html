@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        body {
+            background-color: rgb(34, 34, 34);
+        }
+
+        main {
+            background-color: white;
+            width: 300px;
+            height: 150px;
+            margin: auto;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative;
+            top: calc(50vh - 75px);
+        }
+
+        .buttons {
+            width: 90px;
+            height: 35px;
+        }
+
+        #buttons {
+            position: relative;
+            text-align: center;
+        }
+
+        #visor {
+            text-align: center;
+            padding: 10px;
+            font-size: 50px;
+        }
+
+        #arrow {
+            position: fixed;
+            text-decoration: none;
+            font-size: 60px;
+            margin-top: -15px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="../../index.html" id="arrow">&#8592</a>
+    <main>
+        <div id="visor">0</div>
+        <div id="buttons">
+            <input type="button" value="Adicionar"  class="buttons" onclick="adicionar()">
+            <input type="button" value="Zerar"  class="buttons" onclick="zerar()">
+            <input type="button" value="Subtrair"  class="buttons" onclick="subtrair()">
+        </div>
+    </main>
+        <script src="script.js"></script>
+</body>
+</html>

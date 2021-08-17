@@ -1,0 +1,30 @@
+html, body {
+    width:  100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+canvas{
+    outline: none;
+}
+
+@media screen and (min-width: 400px){
+    #main{
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+    }
+}
+
+@media screen and (max-width: 375px){
+    #main{
+        zoom: 0.4;
+        -moz-transform: scale(0.4);
+        }
+}
+
+@media screen and (min-width: 720px){
+    #main{
+    zoom: 0.8;
+    -moz-transform: scale(0.8);
+    }
+}
