@@ -9,27 +9,33 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="posts.js"></script>
     <script defer src="script.js"></script>
+    <script defer src="animations.js"></script>
 </head>
 
 <body>
     <div id="intro_div">
-        <h1 id="intro_h1">
+        <h1 class="hidden" id="intro_h1">
             &gt Nome: João Pedro<br>
             &gt Idade: <span class="age"></span>
         </h1>
         </p>
     </div>
     <main id="main">
-        <h2>Sobre Mim</h2>
-        <p>
-            Olá, me chamo João Pedro Souza da Cruz, tenho <span class="age"></span> anos e sou um estudante de Sistemas
-            de Informação.
-            Apaixonado por tecnologia, busco sempre estar atualizado na área. Focando no desenvolvimento Front-End Web,
-            além de explorar outras áreas, como o desenvolvimento de jogos no meu tempo livre.
-        </p>
-        <h2>Projetos</h2>
+        <div class="hidden">
+            <h2>Sobre Mim</h2>
+            <p>
+                Olá, me chamo João Pedro Souza da Cruz, tenho <span class="age"></span> anos e sou um estudante de
+                Sistemas
+                de Informação.
+                Apaixonado por tecnologia, busco sempre estar atualizado na área. Focando no desenvolvimento Front-End
+                Web,
+                além de explorar outras áreas, como o desenvolvimento de jogos no meu tempo livre.
+            </p>
+        </div>
         <!-- Div que contém os posts gerados por javascript -->
-        <div id="posts"></div>
+        <div id="posts">
+            <h2 class="hidden">Projetos</h2>
+        </div>
     </main>
 </body>
 

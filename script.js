@@ -25,7 +25,7 @@ function renderPost(title, title_link, image, image_alt, paragraph, id) {
     // Div que contém o conteúdo de um post
     let post_div = document.createElement("div");
     post_div.setAttribute("id", id);
-    post_div.setAttribute("class", "project_div");
+    post_div.setAttribute("class", "project_div hidden");
 
     // Titulo h3
     let post_title = document.createElement("h3");
@@ -60,25 +60,24 @@ function renderPost(title, title_link, image, image_alt, paragraph, id) {
 
     // Coloca o post pronto dentro da div que contém todos os posts
     posts_element.appendChild(post_div);
+    posts_element.appendChild(document.createElement("br"));
 }
 
-window.addEventListener("load", () => {
-    let age = calcAge(23, 9, 2000);
-
-    // Loop HTMLCollection
-    for (let i = 0; i < age_element.length; i++) {
-        age_element[i].innerText = age;
-    }
-
-    // Renderiza todos os posts de acordo com o posts_array
-    posts_array.forEach(e => {
-        renderPost(
-            e.title,
-            e.title_link,
-            e.image,
-            e.image_alt,
-            e.paragraph,
-            e.id
-        );
-    });
+// Renderiza todos os posts de acordo com o posts_array
+posts_array.forEach(e => {
+    renderPost(
+        e.title,
+        e.title_link,
+        e.image,
+        e.image_alt,
+        e.paragraph,
+        e.id
+    );
 });
+
+let age = calcAge(23, 9, 2000);
+
+// Loop HTMLCollection
+for (let i = 0; i < age_element.length; i++) {
+    age_element[i].innerText = age;
+}
